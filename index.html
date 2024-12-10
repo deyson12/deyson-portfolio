@@ -33,6 +33,15 @@
             text-align: center;
             padding: 1rem;
         }
+        
+        .title {
+            color: white;
+        }
+
+        .rol {
+            color: white;
+        }
+
         h1 {
             margin: 0;
             font-size: 2.5rem;
@@ -113,27 +122,61 @@
             background-color: #f0f0f0;
             transform: none;
         }
+
+        .no-imprimir {
+            display: block;
+        }
+
+        .imprimir {
+            display: none;
+        }
+
+        @media print {
+            .no-imprimir {
+                display: none;
+            }
+
+            .imprimir {
+                display: block;
+            }
+
+            .title {
+                color: black;
+            }
+
+            .rol {
+                color: black;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Deyson Fabian Estrada Posada</h1>
-            <p>Technical Lead</p>
+            <h1 class="title">Deyson Fabian Estrada Posada</h1>
+            <p class="rol">Technical Lead</p>
         </header>
 
         <section class="section">
             <h2>Personal Information</h2>
-            <div class="contact-buttons">
-                <a href="https://linkedin.com/in/dfep/" target="_blank" class="contact-button" style="text-decoration: none;" title="https://linkedin.com/in/dfep/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://gitlab.com/deyson12" target="_blank" class="contact-button" style="text-decoration: none;" title="@deyson12">
-                    <i class="fab fa-gitlab"></i>
-                </a>
-				<a href="https://github.com/deyson12" target="_blank" class="contact-button" style="text-decoration: none;" title="@deyson12">
-                    <i class="fab fa-github-alt"></i>
-                </a>
+            <div class="no-imprimir">
+                <div class="contact-buttons">
+                    <a href="https://linkedin.com/in/dfep/" target="_blank" class="contact-button" style="text-decoration: none;" title="https://linkedin.com/in/dfep/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://gitlab.com/deyson12" target="_blank" class="contact-button" style="text-decoration: none;" title="@deyson12">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                    <a href="https://github.com/deyson12" target="_blank" class="contact-button" style="text-decoration: none;" title="@deyson12">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="imprimir">
+                <p><b>LinkedIn:</b> https://linkedin.com/in/dfep/</p>
+                <p><b>Gitlab:</b> https://gitlab.com/deyson12</p>
+                <p><b>Github:</b> https://github.com/deyson12</p>
             </div>
         </section>
 
@@ -142,7 +185,8 @@
             <div class="skills">
                 <span class="skill"> <i class="fa-brands fa-java"></i> Java</span>
                 <span class="skill"> <i class="fa-brands fa-js"></i> Javascript</span>
-                <span class="skill"> <i class="fa-solid fa-database"></i> SQL</span>
+                <span class="skill"> <i class="fa-solid fa-angular"></i> Angular</span>
+                <span class="skill"> <i class="fa-solid fa-database"></i> SQL - Oracle / Postgres / Mysql</span>
             </div>
         </section>
 
@@ -161,6 +205,11 @@
 
         <section class="section">
             <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Technical Lead - Tecnofactor / SURA</h3>
+                <p>February 2024 - Currently | Medellín, Colombia</p>
+                <p>Taking, Leading and Developing technical stuffs in Java Webflux, Azure and Terraform.</p>
+            </div>
             <div class="experience-item">
                 <h3>Sr. Developer Engineer - Endava</h3>
                 <p>March 2023 - February 2024 | Medellín, Colombia</p>
