@@ -24,3 +24,7 @@ function calcularAniosExactos(fechaSuministrada) {
 }
 
 calcularAniosExactos("2013-02-01");
+
+document.getElementById('print-btn').addEventListener('click', function() {
+  window.print();
+});

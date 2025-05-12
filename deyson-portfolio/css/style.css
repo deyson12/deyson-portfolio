@@ -113,6 +113,28 @@ footer {
     transform: none;
 }
 
+.print-btn {
+	width: auto !important;
+    height: auto !important;
+  position: fixed;    /* Fija el botón al viewport */
+  top: 20px;          /* Separación desde arriba */
+  right: 20px;        /* Separación desde la derecha */
+  z-index: 9999;      /* Para que esté siempre encima del contenido */
+  padding: 0px 10px;
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c0c0c0;
+}
+
+.print-btn:hover {
+	outline: none;
+    box-shadow: none;
+    background-color: #f0f0f0;
+    transform: none;
+	cursor: pointer;
+}
+
 .no-imprimir {
     display: block;
 }
