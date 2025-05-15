@@ -143,6 +143,26 @@ footer {
     display: none;
 }
 
+/* Asegúrate de que tu header tenga position: relative */
+header {
+  position: relative;
+}
+
+.language-switcher {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.flag-icon {
+  width: 22px;
+  height: auto;
+  cursor: pointer;
+}
+
+
 @media print {
     .no-imprimir {
         display: none;
